@@ -33,7 +33,7 @@ p {
   font-size: 10px; }
 
 body
-{ background: #000;
+{ background: #FFF;
   font-family: helvetica, arial, geneva; 
   color: #FFF; 
   font-size: 10px; }
@@ -68,7 +68,6 @@ iframe#frame {
     border: none;
     margin: 0;
     padding: 0;
-  overflow: hidden;
     z-index: 999999;
 }
 

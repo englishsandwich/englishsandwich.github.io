@@ -5,8 +5,8 @@
 			<script type="text/javascript">
 var cat1 = [
     "/153.html",
-    "",
-    ""
+    "http://cartodb.com",
+    "google.com"
     ];
 
 var myFrame = document.getElementById("frame");
@@ -17,11 +17,17 @@ function getRandomUrl(myFrame) {
    myFrame.src = url;
 }
 
+btn.addEventListener("click", function() {
+    
+   getRandomUrl(myFrame); 
+    
+});
+
 		</script>
 	</head>
 	<body>   
 
 <br>
-<iframe id="frame" src="/153.html" scrolling="no" width="100%" height="100%"></iframe>
+<iframe id="frame" src="" scrolling="no" width="100%" height="100%"></iframe>
 	</body>
 </html>

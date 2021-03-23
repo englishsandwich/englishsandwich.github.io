@@ -2,10 +2,22 @@
 		<title>Where is this dish from?</title>
 		<link rel="stylesheet" href="/css.css">
 </head>
-
+<script type="text/javascript">
+	function myFunction() {
+  var x = document.getElementById("show");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+	
+</script>
 <body>
 <img src="https://i.pinimg.com/originals/6f/0f/eb/6f0feb3e61e16e2025877f8d1a879505.jpg" width="100%">
-	
+	<div id="show">
+		<button onclick="myFunction()">Need a hint? Show ingredients!</button>
+	</div>
 	<div class="ingredients">
 		example<br>
 		example<p>

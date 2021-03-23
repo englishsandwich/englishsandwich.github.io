@@ -68,7 +68,7 @@ iframe#frame {
     border: none;
     margin: 0;
     padding: 0;
-  overflow:scroll;
+  overflow: hidden;
     z-index: 999999;
 }
 

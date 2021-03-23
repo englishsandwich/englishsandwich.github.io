@@ -6,34 +6,33 @@
 	<head>
 		<link rel="stylesheet" href="/css.css">
 		<script type="text/javascript">
-			function randomIframe() {
-  var intl = [
-    "http://google.com",
-    "",
-    "",
-    "",
-    ""
-  ];
+var cat1 = [
+    "http://arborjs.org",
+    "http://cartodb.com",
+    "http://vis4.net/labs/185"
+    ];
 
-  var i = Math.floow(Math.random() * ends.length);
+var myFrame = document.getElementById("frame");
 
-  var iframe = document.createElement('iframe');
-  iframe.src = intl[i];
-  document.body.appendChild(iframe);
-
+function getRandomUrl(myFrame) {
+   var index = Math.floor(Math.random()*cat1.length);
+   var url = cat1[index];
+   myFrame.src = url;
 }
 
-window.onload = randomIframe;
-			
+btn.addEventListener("click", function() {
+    
 window.onload = function(){
     getRandomUrl(myFrame);
 };
+    
+});
 		</script>
 	</head>
 	<body>   
 
 <br>
-<iframe id="frame" src="" style="width:200px; height: 200px"></iframe>
+<iframe id="frame" src=""></iframe>
     <button id="btn">Click</button>
 	</body>
 </html>

@@ -2,11 +2,26 @@
 		<title>Where is this dish from?</title>
 		<link rel="stylesheet" href="/css.css">
 		<script type="text/javascript">
+			<script type="text/javascript">
+var cat1 = [
+    "/153.html",
+    "",
+    ""
+    ];
+
+var myFrame = document.getElementById("frame");
+
+function getRandomUrl(myFrame) {
+   var index = Math.floor(Math.random()*cat1.length);
+   var url = cat1[index];
+   myFrame.src = url;
+}
+
 		</script>
 	</head>
 	<body>   
 
 <br>
-<iframe id="test" src="/153.html" scrolling="no" width="100%" height="100%"></iframe>
+<iframe id="frame" src="/153.html" scrolling="no" width="100%" height="100%"></iframe>
 	</body>
 </html>

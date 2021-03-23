@@ -84,6 +84,17 @@ div.ingredients {
 
   .show {
   background: none;
+  font-family: helvetica, arial, geneva; 
+  position: relative;
+    top: 50%;
+    left: 50%;
+    border: none;
+    margin: 0;
+    padding: 10;
+    z-index: 99999;
+    
+    button.on {
+  background: none;
   font-family: helvetica, arial, geneva;
   width: 400px; 
   height: 80% !important; 
@@ -93,4 +104,5 @@ div.ingredients {
     border: 1px solid #FFF;
     margin: 0;
     padding: 10;
-    z-index: 99999;
+    z-index: 999999;
+

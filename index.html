@@ -16,7 +16,7 @@ function getRandomUrl(myFrame) {
    myFrame.src = url;
 }
 
-btn.addEventListener("click", function() {
+refresh.addEventListener("click", function() {
     
    getRandomUrl(myFrame); 
     
@@ -26,6 +26,7 @@ btn.addEventListener("click", function() {
 	</head>
 	<body>   
 
+		<center><button id="refresh">NEW DISH!</button>&nbsp; &nbsp; <button src="https://www.google.com/maps/@30.8601881,-19.8368866,3z" target="__blankmap">MAP</button></center>
 <br>
 <iframe id="frame" src="/153.html" scrolling="no" width="100%" height="100%"></iframe>
 	</body>

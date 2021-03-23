@@ -3,20 +3,54 @@
 		<link rel="stylesheet" href="/css.css">
 </head>
 <script type="text/javascript">
+	
+	//button
 	function myFunction() {
   var x = document.getElementById("ingredients");
   if (x.style.display === "none") {
-    x.style.display = "block";
+    x.style.display = "inline";
   } else {
     x.style.display = "none";
   }
 }
 	
+	//quiz answer
+var answers = {
+    "q1": ["Senegal"],
+};
+
+function markAnswers(){
+    $("input[type='text']").each(function(){
+        console.log($.inArray(this.value, answers[this.id]));
+        if($.inArray(this.value, answers[this.id]) === -1){
+            $(this).parent().append("Great job! />");
+        } else {
+            $(this).parent().append("Sorry, the correct answer is:  />");
+        }
+    })
+}
+    
+$("form").on("submit", function(e){
+    e.preventDefault();
+    markAnswers();
+});	
 </script>
 <body>
-		<button id="on" onclick="myFunction()">Need a hint? Show ingredients!</button>
+	
+		<center>
+			
+			<form>
+    <ol>
+	    <li>Country: <input id="q1" type="text" /></li>
+    </ol>
+    <input type="submit" id="submit" value="Result" />
+</form>
+			
+			
+			<button id="on" onclick="myFunction()">Need a hint? Show ingredients!</button>
+			</center>
 	<div class="ingredients">
-		<h1>ingreddients</h1>
+		<h1>ingredients</h1>
 		rice<br>
 		fish<br>
 		carrots<br>

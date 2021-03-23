@@ -63,12 +63,9 @@ iframe#frame {
   height: 100% !important; 
   position: fixed;
     top: 0px;
-    bottom: 0px;
     right: 0px;
     border: none;
-    margin: 0;
-    padding: 0;
-    z-index: 999999;
+    z-index: 999;
 }
 
 div.ingredients {

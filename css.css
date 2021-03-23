@@ -49,20 +49,18 @@ padding-right: 0;
 }
 
 table, tr, td {
-  font-family: value; [your font name]
+  background: #FFF;
+  font-family: helvetica, arial, geneva;
   color: #000000;
-  padding-left: value; [2cm, 4cm etc.]
-  padding-right: value; [2cm]
-  padding-top: value; [2cm]
-  padding-bottom: value; [2cm]
-  padding: value; [2cm this is for all four sides]
-  padding: value value; [2cm, 4cm : two values for four sides, add numerical value] }
+  border-style: solid; 
+  border-color: #000000;
+  border-width: 1px; 
+  padding: 1cm;  }
 
 input, textarea, iframe, div { 
-  background: #000000 url(yourimage.gif);
-  font-family: value; [your font name]
+  background: #FFF;
+  font-family: helvetica, arial, geneva;
   color: #000000;
-  border-style: value; [dotted, dashed, solid, double, groove, ridge, inset, outset]
+  border-style: solid; 
   border-color: #000000;
-  border-width: valuepx; [numerical value, 5, 6, 8...] }
-
+  border-width: 0px; }

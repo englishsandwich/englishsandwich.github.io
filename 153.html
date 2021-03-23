@@ -10,7 +10,7 @@
   if (x.style.display === "none") {
     x.style.display = "inline";
   } else {
-    x.style.display = "none";
+    x.style.display = "none !important";
   }
 }
 	
@@ -45,7 +45,7 @@ $("form").on("submit", function(e){
     </ol>
     <input type="submit" id="submit" value="Result" />
 </form>
-			
+	<p>		
 			
 			<button onclick="myFunction()">Need a hint? Show ingredients!</button>
 			</center>

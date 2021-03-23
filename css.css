@@ -62,9 +62,9 @@ iframe#frame {
   background: #FFF;
   font-family: helvetica, arial, geneva;
   color: #000000;
-  border-style: solid; 
-  border-color: #000000;
-  border-width: 0px; 
+  border-style: solid!important; 
+  border-color: #000000!important;
+  border-width: 0px!important; 
   width: 100% !important; 
   height: 100% !important; 
  

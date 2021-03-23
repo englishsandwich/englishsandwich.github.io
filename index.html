@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="css.css">
 		<script type="text/javascript">
 			function randomIframe() {
-  var ends = [
+  var intl = [
     "http://www.terra.com.br",
     "http://www.uol.com.br",
     "http://www.bol.com.br",
@@ -19,9 +19,9 @@
   var i = Math.floow(Math.random() * ends.length);
 
   var iframe = document.createElement('iframe');
-  iframe.src = ends[i];
-  iframe.style.height = '300px';
-  iframe.style.width = '400px';
+  iframe.src = intl[i];
+  iframe.style.height = '100%';
+  iframe.style.width = '100%';
   document.body.appendChild(iframe);
 
 }
@@ -29,12 +29,8 @@
 window.onload = randomIframe;
 		</script>
 	</head>
-	<body>
-		<p>test</p>
-		<h1>test</h1>
-		<h2>test</h2>
-    
-    
+	<body>   
+    <iframe src="https://www.w3schools.com" title=""></iframe>
     
 	</body>
 </html>

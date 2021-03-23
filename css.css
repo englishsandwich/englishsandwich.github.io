@@ -48,7 +48,7 @@ table, tr, td {
   border-width: 1px; 
   padding: 1cm; }
 
-input, textarea, div { 
+input, textarea { 
   background: #FFF;
   font-family: helvetica, arial, geneva;
   color: #000000;
@@ -72,7 +72,6 @@ div.ingredients {
   background: #FFF;
   opacity: 0.6;
   font-family: helvetica, arial, geneva;
-
   position: fixed;
     top: 50px;
     bottom: 0px;
@@ -80,7 +79,7 @@ div.ingredients {
     border: none;
     margin: 0;
     padding: 0;
-    z-index: 9999999;
+  z-index: 9999999; }
 
   .show {
   background: none;
@@ -91,7 +90,7 @@ div.ingredients {
     border: none;
     margin: 0;
     padding: 10;
-    z-index: 9999999;
+    z-index: 9999999; }
     
     button.on {
   background: none;
@@ -101,5 +100,5 @@ div.ingredients {
     border: 1px solid #FFF;
     margin: 0;
     padding: 10;
-    z-index: 999999;
+      z-index: 999999; }
 

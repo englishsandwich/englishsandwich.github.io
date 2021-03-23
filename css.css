@@ -88,17 +88,17 @@ div.ingredients {
     border: none;
     margin: 0;
     padding: 0;
-  z-index: 9999999; }
+  z-index: 99999; }
 
 #hideshow {
-  width: 100%;
-  padding: 0 0;
-  text-align: center;
-  background-color: none;
+background: none;
+  display:none;
   position: fixed;
     top: 50px;
+    bottom: 0px;
     left: 50px;
     border: none;
     margin: 0;
     padding: 0;
+  z-index: 9999; }
 }

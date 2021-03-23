@@ -63,4 +63,6 @@ input, textarea, iframe, div {
   color: #000000;
   border-style: solid; 
   border-color: #000000;
-  border-width: 0px; }
+  border-width: 0px; 
+  width: 100%; 
+  height: 80%}

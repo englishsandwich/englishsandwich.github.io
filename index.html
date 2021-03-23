@@ -3,34 +3,37 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>Where is this dish from?</title>
-		<link href="../demo.css" rel="stylesheet" type="text/css" />
 	<head>
-		<link rel="stylesheet" href="css.css">
+		<link rel="stylesheet" href="/css.css">
 		<script type="text/javascript">
 			function randomIframe() {
   var intl = [
-    "http://www.terra.com.br",
-    "http://www.uol.com.br",
-    "http://www.bol.com.br",
-    "http://www.cade.com.br",
-    "http://www.baixaki.com.br"
+    "http://google.com",
+    "",
+    "",
+    "",
+    ""
   ];
 
   var i = Math.floow(Math.random() * ends.length);
 
   var iframe = document.createElement('iframe');
   iframe.src = intl[i];
-  iframe.style.height = '100%';
-  iframe.style.width = '100%';
   document.body.appendChild(iframe);
 
 }
 
 window.onload = randomIframe;
+			
+window.onload = function(){
+    getRandomUrl(myFrame);
+};
 		</script>
 	</head>
 	<body>   
-    <iframe src="https://www.w3schools.com" title=""></iframe>
-    
+
+<br>
+<iframe id="frame" src="" style="width:200px; height: 200px"></iframe>
+    <button id="btn">Click</button>
 	</body>
 </html>

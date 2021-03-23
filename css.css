@@ -91,16 +91,13 @@ div.ingredients {
     border: none;
     margin: 0;
     padding: 10;
-    z-index: 99999;
+    z-index: 9999999;
     
     button.on {
   background: none;
   font-family: helvetica, arial, geneva;
   width: 400px; 
   height: 80% !important; 
-  position: relative;
-    top: 50%;
-    left: 50%;
     border: 1px solid #FFF;
     margin: 0;
     padding: 10;

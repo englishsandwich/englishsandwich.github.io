@@ -33,7 +33,7 @@ window.onclick = function(event) {
 	
 	//quiz answer
 var answers = {
-    "q1": ["Senegal"],
+    "q1": ["Senegal", "senegal"],
 };
 
 function markAnswers(){
@@ -57,10 +57,7 @@ $("form").on("submit", function(e){
 		<center>
 			
 			<form>
-    <ol>
-	    <li>Country: <input id="q1" type="text" /></li>
-    </ol>
-    <input type="submit" id="submit" value="Result" />
+  Country: <input id="q1" type="text" />&nbsp; <input type="submit" id="submit" value="Submit" />
 </form>
 	<p>		
 			

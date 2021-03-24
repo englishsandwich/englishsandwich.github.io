@@ -46,14 +46,14 @@ p.ingredients {
 body
 { background: #FFF;
   font-family: helvetica, arial, geneva; 
-  color: #FFF; 
-  font-size: 10px; }
+  color: #000; 
+  font-size: 12px; }
 
 
 table, tr, td {
   background: #FFF;
   font-family: helvetica, arial, geneva;
-  color: #000000;
+  color: #000;
   border-style: solid; 
   border-color: #000000;
   border-width: 1px; 
@@ -63,7 +63,10 @@ input, textarea {
   background: #FFF;
   font-family: helvetica, arial, geneva;
   color: #000000;
-  border: none;}
+  border-style: solid; 
+  border-color: #000000;
+  border-width: 1px;
+}
 
 iframe#frame { 
   background: #FFF;
@@ -71,10 +74,10 @@ iframe#frame {
   width: 100% !important; 
   height: 100% !important; 
   position: fixed;
-    top: 0px;
-    right: 0px;
-    border: none;
-    z-index: 999;
+  top: 0px;
+  right: 0px;
+  border: none;
+  z-index: 999;
 }
 
 div.ingredients {
@@ -121,7 +124,6 @@ div.ingredients {
 
 #hideshow {
 background: none;
-  position: fixed;
     top: 50px;
     bottom: 0px;
     left: 50px;

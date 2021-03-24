@@ -31,26 +31,6 @@ window.onclick = function(event) {
   }
 }
 	
-	//quiz answer
-var answers = {
-    "q1": ["Senegal", "senegal"],
-};
-
-function markAnswers(){
-    $("input[type='text']").each(function(){
-        console.log($.inArray(this.value, answers[this.id]));
-        if($.inArray(this.value, answers[this.id]) === -1){
-            $(this).parent().append("Great job />");
-        } else {
-            $(this).parent().append("Sorry, the correct answer is: Senegal />");
-        }
-    })
-}
-    
-$("form").on("submit", function(e){
-    e.preventDefault();
-    markAnswers();
-});	
 </script>
 <body>
 	

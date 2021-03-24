@@ -110,8 +110,8 @@ background: none;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
+    top: 50px;
+    left: 50px;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -121,24 +121,24 @@ background: none;
 
 /* Modal Content */
 .modal-content {
-  background-color: rgba(255,255,255,0.5); /* Black w/ opacity */
+  background-color: rgba(255,255,255,0.7); /* Black w/ opacity */
   margin: auto;
-  padding: 20px;
+  padding: 10px;
   border: 0px solid #FFF;
   width: 40%;
 }
 
 /* The Close Button */
 .close {
-  color: #fefefe;
+  color: #AAA;
   float: right;
-  font-size: 12px;
+  font-size:24px;
   font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #aaa;
+  color: #CCC;
   text-decoration: none;
   cursor: pointer;
 }

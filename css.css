@@ -25,7 +25,7 @@ h1 {
 h1.modal-content {
    font-family: garamond, times new roman, times; 
   color: #000; 
-  font-size: 28px;
+  font-size: 34px;
 }
   
 h2 {
@@ -41,7 +41,7 @@ p {
 p.modal-content {
   font-family: helvetica, arial, geneva; 
   color: #000; 
-  font-size: 20px; }
+  font-size: 26px; }
 
 body
 { background: #FFF;
@@ -123,10 +123,10 @@ background: none;
 .modal-content {
   background-color: rgba(255,255,255,0.7); /* Black w/ opacity */
   margin: auto;
-  padding: 0px;
+  padding-left: 15px;
   border: 0px solid #FFF;
-  width: 40%;
-  top: 50px;
+  width: 300px;
+  top: 100px;
   left: 50px;
     position: fixed;
 }

@@ -126,10 +126,13 @@ background: none;
   padding-left: 15px;
   padding-right: 15px;
   border: 0px solid #FFF;
-  width: 300px fixed;
+  width: 400px fixed;
   top: 100px;
   left: 50px;
-    position: fixed;
+  position: fixed;
+  font-family: helvetica, arial, geneva; 
+  color: #000; 
+  font-size: 26px !important; 
 }
 
 /* The Close Button */
@@ -142,7 +145,7 @@ background: none;
 
 .close:hover,
 .close:focus {
-  color: #aaa;
+  color: rgba(0,0,0,0.5);
   text-decoration: none;
   cursor: pointer;
 }

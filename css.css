@@ -110,8 +110,8 @@ background: none;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 10px; /* Location of the box */
-    top: 50px;
-    left: 50px;
+    top: 0px;
+    left: 0px;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -126,6 +126,9 @@ background: none;
   padding: 0px;
   border: 0px solid #FFF;
   width: 40%;
+  top: 50px;
+  left: 50px;
+    position: fixed;
 }
 
 /* The Close Button */

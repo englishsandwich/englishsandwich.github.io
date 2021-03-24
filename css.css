@@ -22,7 +22,7 @@ h1 {
   color: #000; 
   font-size: 14px; }
 
-h1.ingredients {
+h1.modal-content {
    font-family: garamond, times new roman, times; 
   color: #000; 
   font-size: 28px;
@@ -38,7 +38,7 @@ p {
   color: #000; 
   font-size: 10px; }
 
-p.ingredients {
+p.modal-content {
   font-family: helvetica, arial, geneva; 
   color: #000; 
   font-size: 20px; }

@@ -8,18 +8,7 @@
 </head>
 <body>
 
-  	<style type="text/css">
- body { font-family:arial, helvetica, sans-serif; font-weight:bold; font-size:16px; color:#000; text-align:left; margin:3px 0px; }
- input { font-size:16px; }
- #pagewrap  { width:500px; height:500px; margin-left:20px;  }
- #score { margin-top:10px; }
- ol li { padding:10px; }
-</style>
-</head>
 
-<body>
-
-<div id="pagewrap">
 <p>Where is this from?</p>
   <form>
     <ul>
@@ -30,16 +19,16 @@
   </form>
   <div id="score">
     <!-- writes to here -->
-  </div>
 </div>
 <!-- end pagewrap -->
 <script type="text/javascript">
  A= new Array();   // preload images
- A[0]=new Image(28,15); A[0].src="http://www.littletherese.com/tick.jpg";
- A[1]=new Image(22,15); A[1].src="http://www.littletherese.com/x.jpg";
+ A[0]=new Image(28,15); A[0].src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/check-mark-button_2705.png";
+ A[1]=new Image(22,15); A[1].src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/cross-mark_274c.png";
 //
 $("form").on("submit", function(e){ e.preventDefault(); $("img").remove(); markAnswers(); });
 // -----
+//
 $("input[type=reset]").on("click", function(){ $("img").remove(); $("#score").html(""); });
 // ------
 var answers = {"q1":["Senegal"] }

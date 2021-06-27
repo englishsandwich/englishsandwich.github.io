@@ -4,12 +4,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Where is this dish from?</title>
 		<link rel="stylesheet" href="/css.css">
-  
+
 </head>
 <body>
-	<center>
+
+  	
+          <div class="scroll">
             <form method="post" id="myForm" name="f">
-		    <ul> <li>
+              <ol>
+                <li>
                Where is this dish from? 
                   <select name="question1">
                         <option>select country</option>
@@ -266,18 +269,21 @@
     <option value="Zambia">Zambia</option>
     <option value="Zimbabwe">Zimbabwe</option>
 </select>
-            
+                </li>
+              </ol>
+
              <input type="submit" id="submit" value="Submit" />
               <input type="reset" class="reset" id="reset" name="reset" value="Next Question!" />
-			    </li> </ul>
-			    </form>
+            </form>
              <div id="score"></div> 
                <div class="address">
-           
+
             </div>
-  
-  
-  
+<br><center>
+<img src="https://i.pinimg.com/originals/6f/0f/eb/6f0feb3e61e16e2025877f8d1a879505.jpg" width="80%">
+
+
+
   <script>
       Object.size = function(obj) {
         var size = 0, key;
@@ -286,31 +292,104 @@
         }
         return size;
       };
-      
-    var answers = {
-    "question1": {answer: "Senegal"},
 
-};
+      (function(){
+        "use strict";
+        window.checkAnswers = function(opts){
 
-function markAnswers(){
-    $("input[type='text']").each(function(){
-        console.log($.inArray(this.value, answers[this.id]));
-        if($.inArray(this.value, answers[this.id]) === -1){
-            $(this).parent().append("<img src='http://www.littletherese.com/x.jpg' />");
-        } else {
-            $(this).parent().append("<img src='http://www.littletherese.com/tick.jpg' />");
+          function validateInput(){
+            var question,
+                answer;
+
+            for (question in opts) {
+              if(opts.hasOwnProperty(question)) {
+                answer = f.elements[question].options[f.elements[question].selectedIndex].value;
+                if(answer === "na"){
+                  opts[question].state = "not-filled-in";
+                } else if(answer === opts[question].answer){
+                  opts[question].state = "correct!";
+                } else {
+                  opts[question].state = "try again";
+                }
+              }
+            }
+          }
+
+          function markCorrectOrIncorrect(){
+            var question, 
+                li;
+
+            for (question in opts) {
+              if(opts.hasOwnProperty(question)) {
+                var img = new Image(),
+                li = f.elements[question].parentElement,
+                feedbackImg = li.getElementsByTagName('img')[0];
+
+                if (feedbackImg){
+                  li.removeChild(feedbackImg);
+                }
+
+                if(opts[question].state === "correct"){
+                  img.src = "http://www.littletherese.com/tick.jpg";
+                  li.appendChild(img)
+                } else if(opts[question].state === "error"){
+                  img.src = "http://www.littletherese.com/x.jpg";
+                  li.appendChild(img)
+                }
+              }
+            }
+          }
+
+          function displayScore(){
+            var correct = 0,
+                error = 0,
+                score = document.getElementById("score"),
+                totalQuestions = Object.size(opts),
+                question;
+
+            for (question in opts) {
+              if(opts.hasOwnProperty(question)) {
+                if(opts[question].state === "correct"){
+                  correct ++
+                } else if(opts[question].state === "error"){
+                  error ++
+                }
+              }
+            }
+            score.innerHTML = "You got " + correct + " out of " + totalQuestions;
+          }
+
+          function init(){
+            validateInput();
+            markCorrectOrIncorrect();
+            displayScore();
+          }
+
+          init();
         }
-    })
+      }());
+
+      f.onsubmit = function(){
+        checkAnswers({
+          question1: {answer: "Senegal"},
+
+        })
+        return false;
+      }
+
+    f.reset.onclick = function(){
+  var imgs = document.querySelectorAll('img');
+  for(var i=0; i<imgs.length; i++){
+    imgs[i].parentNode.removeChild(imgs[i]);
+  }
+
+  document.getElementById("score").innerHTML = "";
 }
-    
-$("form").on("submit", function(e){
-    e.preventDefault();
-    markAnswers();
-});
+
     </script> 
-  
-  
-  
+
+
+
 
 <!-- Trigger/Open The Modal -->
 <button id="myBtn">NEED A HINT?</button>
@@ -335,7 +414,7 @@ $("form").on("submit", function(e){
   </div>
 
 </div>
-	
+
 
 
 
@@ -369,4 +448,3 @@ window.onclick = function(event) {
 
 </body>
 </html>
-

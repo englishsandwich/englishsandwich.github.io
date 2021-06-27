@@ -20,14 +20,13 @@
 <body>
 
 <div id="pagewrap">
-<p>Type or delete in the text boxes below</p>
+<p>Where is this from?</p>
   <form>
-    <ol>
-      <li>He <input id="q1" type="text" size="20" value="doesn't"> like football.</li>
-      <li>He <input id="q2" type="text" size="20" value="hasn't"> got any money.</li>
-    </ol>
-    <input type="submit" id="submit" value="Result">
-    <input type="reset" class="reset" id="reset" name="reset" value="Start again">
+    <ul>
+      <li><input id="q1" type="text" size="20"></li>
+    </ul>
+    <input type="submit" id="submit" value="Submit">
+    <input type="reset" class="reset" id="reset" name="reset" value="New dish!">
   </form>
   <div id="score">
     <!-- writes to here -->
@@ -43,7 +42,7 @@ $("form").on("submit", function(e){ e.preventDefault(); $("img").remove(); markA
 // -----
 $("input[type=reset]").on("click", function(){ $("img").remove(); $("#score").html(""); });
 // ------
-var answers = {"q1":["doesn't","does not"], "q2":["hasn't","has not"] }
+var answers = {"q1":["Senegal"] }
 var numQuestions=0, questionsCorrect=0;
 //
   function markAnswers()
@@ -64,12 +63,16 @@ var numQuestions=0, questionsCorrect=0;
 //
 </script>
 </div>
-
-
-
-
 <!-- Trigger/Open The Modal -->
 <button id="myBtn">NEED A HINT?</button>
+	
+<br><center>
+<img src="https://i.pinimg.com/originals/6f/0f/eb/6f0feb3e61e16e2025877f8d1a879505.jpg" width="80%">
+
+
+
+
+
 
 <!-- The Modal -->
 <div id="myModal" class="modal">

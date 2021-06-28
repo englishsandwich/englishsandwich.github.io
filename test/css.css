@@ -64,7 +64,7 @@ p {
   justify-content: flex-end;
   background: url(https://i.pinimg.com/originals/6f/0f/eb/6f0feb3e61e16e2025877f8d1a879505.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   border: 0px #FFF;
   border-radius: 10px;
 }
@@ -124,7 +124,7 @@ p {
 }
 *//
 
-.btn:disabled, button:disabled, .container2 .options .btn:disabled {
+.button:disabled {
   padding: 10px;
   margin: 10px;
   background-color: #FFFFFF;
@@ -136,9 +136,10 @@ p {
   border-radius: 1px;
   box-shadow: 0px 0px 0px 0px;
   cursor: pointer;
+  width: 100px;
 }
 
-.btn:hover, .btn:active, button:hover, button:active {
+.button:hover, .button:active {
   background-color: #FAE6BE;
   cursor: pointer;
 }

@@ -49,8 +49,9 @@ input, textarea {
   background: #FFF;
   border: 0px #FFF;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px 1px;
+  box-shadow: 1px 1px 0px 0px;
   padding: 10px;
+  width: 80%;
 }
 
 .container2 {
@@ -61,8 +62,9 @@ input, textarea {
   background: #FFF;
   border: 0px #FFF;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px 1px;
+  box-shadow: 1px 1px 0px 0px;
   padding: 10px;
+  width: 80%;
 }
 
 .country {

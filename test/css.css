@@ -107,6 +107,15 @@ input, textarea {
   border: 0px #FFF;
 }
 
+.btn {
+  padding: 3px;
+  margin: 4px;
+  background: #F4C669;
+  border: 0px solid  #F4C669;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0px 0px;
+}
+
 .btn btn-option {
   padding: 3px;
   margin: 4px;

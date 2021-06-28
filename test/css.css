@@ -100,9 +100,19 @@ input, textarea {
   border: 0px #FFF;
 }
 
-.btn btn-option {}
+.btn btn-option {
+  padding: 3px;
+  margin: 4px;
+  background: #F4C669;
+  border: 1px solid  #F4C669;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0px 0px;
+}
 
-.btn btn-restart, .btn btn-back, .btn btn-next, .btn btn-submit, {}
+.btn btn-restart, .btn btn-back, .btn btn-next, .btn btn-submit, {
+  padding: 3px;
+  margin: 4px;
+}
 
 
 

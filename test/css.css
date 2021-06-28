@@ -124,7 +124,7 @@ p {
 }
 *//
 
-.btn, button, .container2 .options .btn {
+.btn:disabled, button:disabled, .container2 .options .btn:disabled {
   padding: 10px;
   margin: 10px;
   background-color: #FFFFFF;

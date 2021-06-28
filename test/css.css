@@ -58,6 +58,7 @@ p {
 
 .country {
   display: flex-column;
+  flex: 2 1 0;
   background: url(https://i.pinimg.com/originals/6f/0f/eb/6f0feb3e61e16e2025877f8d1a879505.jpg);
   border: 0px #FFF;
   border-radius: 10px;
@@ -67,6 +68,7 @@ p {
 
 .ingredients {
   display: flex-column;
+  flex: 1 1 0;
   background: #FFF;
   border: 0px #FFF;
 }

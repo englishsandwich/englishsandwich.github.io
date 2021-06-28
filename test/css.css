@@ -102,20 +102,20 @@ p {
 }
 
 .btn btn-option {
-  padding: 3px;
-  margin: 4px;
+  padding: 10px;
+  margin: 10px;
   background: #F4C669;
   border: 0px solid  #F4C669;
-  border-radius: 10px;
+  border-radius: 4px;
   box-shadow: 1px 1px 0px 0px;
 }
 
 .btn btn-restart, .btn btn-back, .btn btn-next, .btn btn-submit, {
-  padding: 3px;
-  margin: 4px;
+  padding: 10px;
+  margin: 10px;
   background: #F4C669;
   border: 0px solid  #F4C669;
-  border-radius: 10px;
+  border-radius: 4px;
   box-shadow: 1px 1px 0px 0px;
 }
 

@@ -1,7 +1,7 @@
 body
 { background: linear-gradient(#593645, #9B5E77, #9B5E77, #C7A3B2);
   background-repeat:no-repeat;
-  font-family: Lato, arial, geneva; 
+  font-family: gill sans, arial, geneva; 
   height: 100vh;
   color: #000; 
   font-size: 12px; 
@@ -9,19 +9,19 @@ body
 
 
 h1 {
-  font-family: Lora, times new roman, times; 
+  font-family: garamond, times new roman, times; 
   color: #000; 
   font-size: 18px; 
 }
   
 h2 {
-  font-family: Lora, times new roman, times; 
+  font-family: gill sans, times new roman, times; 
   color: #000; 
-  font-size: 16px; 
+  font-size: 14px; 
 }
 
 p {
-  font-family: Lato, arial, geneva; 
+  font-family: gill sans, arial, geneva; 
   color: #000; 
   font-size: 12px; 
 }

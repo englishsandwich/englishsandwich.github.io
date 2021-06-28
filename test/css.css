@@ -62,6 +62,7 @@ p {
   border: 0px #FFF;
   border-radius: 10px;
   width: 80%;
+  height: 100%;
 }
 
 .ingredients {
@@ -89,10 +90,16 @@ p {
   display:;
   background: #FFF;
   border: 0px #FFF;
+  padding-top: 20px;
+}
+
+#explanation {
 }
 
 }
 
+
+//*
 .btn btn-option {
   padding: 10px;
   margin: 10px;
@@ -110,9 +117,20 @@ p {
   border-radius: 2px;
   box-shadow: 1px 1px 0px 0px;
 }
+*//
 
+.btn {
+  padding: 10px;
+  margin: 10px;
+  background: #FFFFFF;
+  border: 1px solid  #000000;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px 0px;
+}
 
-
+.btn:hover, .btn:active {
+  background: #FAE6BE;
+}
 
 A:link { 
   text-decoration: none; 

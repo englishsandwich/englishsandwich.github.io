@@ -1,0 +1,121 @@
+body
+{ background: linear-gradient(#9B5E77, #FFFFFF);
+  background-repeat:no-repeat;
+  font-family: helvetica, arial, geneva; 
+  color: #000; 
+  font-size: 12px; }
+
+
+h1 {
+  font-family: garamond, times new roman, times; 
+  color: #000; 
+  font-size: 14px; }
+  
+h2 {
+  font-family: garamond, times new roman, times; 
+  color: #000; 
+  font-size: 12px; }
+
+p {
+  font-family: helvetica, arial, geneva; 
+  color: #000; 
+  font-size: 10px; }
+
+
+table, tr, td {
+  background: #FFF;
+  font-family: helvetica, arial, geneva;
+  color: #000;
+  border-style: solid; 
+  border-color: #000000;
+  border-width: 1px; 
+  padding: 1cm; }
+
+input, textarea { 
+  background: #FFF;
+  font-family: helvetica, arial, geneva;
+  color: #000000;
+  border-style: solid; 
+  border-color: #000000;
+  border-width: 1px;
+}
+
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  border: 0px #FFF;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px;
+  
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  border: 0px #FFF;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px;
+}
+
+.country {
+  display: flex-column;
+  background: #FFF;
+  border: 0px #FFF;
+}
+
+.ingredients {
+  display: flex-column;
+  background: #FFF;
+  border: 0px #FFF;
+}
+
+.question-text {
+  display:;
+  background: #FFF;
+  border: 0px #FFF;
+}
+
+.options {
+  display:;
+  background: #FFF;
+  border: 0px #FFF;}
+
+#True {}
+
+#False {}
+
+.controls {
+  display:;
+  background: #FFF;
+  border: 0px #FFF;
+}
+
+.btn btn-option {}
+
+.btn btn-restart, .btn btn-back, .btn btn-next, .btn btn-submit, {}
+
+
+
+
+A:link { 
+  text-decoration: none; 
+  font-weight: bold;
+  color:#000000; }
+A:visited { 
+  text-decoration: none; 
+  font-weight: bold;
+  color:#000000; }
+A:active { 
+  text-decoration: none;
+  font-weight: bold;
+  color:#000000; }
+A:hover { 
+  text-decoration: none; 
+  font-weight: bold;
+  color:#000000; }

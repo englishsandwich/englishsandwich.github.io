@@ -122,7 +122,7 @@ p {
 }
 *//
 
-div.button, .button:disabled, .container2 .options .button, .container2 .options .button:disabled{
+button.button, button.button:disabled, .container2 .options .button, .container2 .options .button:disabled{
   padding: 10px;
   margin: 10px;
   background-color: #FFFFFF;
@@ -137,7 +137,7 @@ div.button, .button:disabled, .container2 .options .button, .container2 .options
   width: 100px;
 }
 
-.button:hover, .button:active {
+button.button:hover, button.button:active {
   background-color: #FAE6BE;
   cursor: pointer;
 }

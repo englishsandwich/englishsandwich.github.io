@@ -62,8 +62,8 @@ p {
   align-self: stretch;
   align-items: flex-end;
   background: url(https://i.pinimg.com/originals/6f/0f/eb/6f0feb3e61e16e2025877f8d1a879505.jpg);
-  background-repeat:no-repeat;
-  background-size:contain;
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 0px #FFF;
   border-radius: 10px;
 }

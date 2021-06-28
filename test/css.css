@@ -2,7 +2,7 @@ body
 { background: linear-gradient(#593645, #9B5E77, #9B5E77, #C7A3B2);
   background-repeat:no-repeat;
   font-family: gill sans, arial, geneva; 
-  height: 100vh;
+  height: 100% !important;
   color: #000; 
   font-size: 12px; 
 }

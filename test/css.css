@@ -9,21 +9,21 @@ body
 
 
 h1 {
-  font-family: Lato, times new roman, times; 
+  font-family: Lora, times new roman, times; 
   color: #000; 
-  font-size: 14px; 
+  font-size: 18px; 
 }
   
 h2 {
-  font-family: Lato, times new roman, times; 
+  font-family: Lora, times new roman, times; 
   color: #000; 
-  font-size: 14px; 
+  font-size: 16px; 
 }
 
 p {
   font-family: Lato, arial, geneva; 
   color: #000; 
-  font-size: 11px; 
+  font-size: 12px; 
 }
 
 

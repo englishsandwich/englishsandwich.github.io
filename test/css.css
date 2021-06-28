@@ -78,6 +78,7 @@ img {
   flex: 1 1 auto;
   background: #FFF;
   border: 0px #FFF;
+  padding:15px;
 }
 
 .question-text {

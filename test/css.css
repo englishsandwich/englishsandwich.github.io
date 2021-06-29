@@ -149,6 +149,15 @@ img {
 
 #False {}
 
+
+#explanation {}
+
+.score {}
+
+#user-score {}
+
+#total-score {}
+
 .controls {
   display:;
   background: #FFF;
@@ -156,10 +165,6 @@ img {
   padding-top: 20px;
 }
 
-#explanation {
-}
-
-}
 
 
 .btn, button {
@@ -195,3 +200,7 @@ A:hover {
   text-decoration: none; 
   font-weight: bold;
   color:#000000; }
+
+.hide {
+  display: none;
+}

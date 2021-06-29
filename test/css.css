@@ -106,7 +106,16 @@ img {
 .options {
   display:;
   background: #FFF;
-  border: 0px #FFF;}
+  border: 0px #FFF;
+}
+
+
+#map {
+  height: 350px;
+  display:;
+  background: #FFF;
+  border: 0px #FFF;
+      }
 
 #True {}
 

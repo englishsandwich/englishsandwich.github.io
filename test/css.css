@@ -30,10 +30,10 @@ p {
 
 p.source {
   font-family: 'Rubik', sans-serif;
-  color: #ccc; 
+  color: #bbb; 
   font-size: 8px; 
   text-align: right;
-  margin-top: 0.1em;
+  margin-top: 0.6em;
 }
 
 .container1 {
@@ -136,7 +136,7 @@ img {
 
 
 #map {
-  height: 350px;
+  height: 300px;
   width: 100%;
   flex: 1 1 0;
   display:;

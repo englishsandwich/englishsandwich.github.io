@@ -20,6 +20,7 @@ h2 {
   font-family: 'Rubik', sans-serif;
   color: #422933; 
   font-size: 20px; 
+  margin-top: -1.8em;
 }
 
 p {
@@ -30,10 +31,10 @@ p {
 
 p.source {
   font-family: 'Rubik', sans-serif;
-  color: #bbb; 
+  color: #fff; 
   font-size: 8px; 
   text-align: right;
-  margin-top: -2em;
+  margin-top: -1.8em;
 }
 
 .container1 {

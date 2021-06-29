@@ -31,8 +31,8 @@ p {
 p.source {
   font-family: 'Rubik', sans-serif;
   color: #ccc; 
-  font-size: 10px; 
-  align: right;
+  font-size: 8px; 
+  text-align: right;
 }
 
 .container1 {

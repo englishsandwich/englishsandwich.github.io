@@ -37,6 +37,8 @@ p.source {
 
 .container1 {
   display: flex;
+    display: flex-column;
+  flex: 1 1 auto;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -52,6 +54,8 @@ p.source {
 
 .container2 {
   display: flex;
+    display: flex-column;
+  flex: 1 1 auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;

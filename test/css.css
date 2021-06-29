@@ -28,7 +28,12 @@ p {
   font-size: 16px; 
 }
 
-
+p.source {
+  font-family: 'Rubik', sans-serif;
+  color: #ccc; 
+  font-size: 10px; 
+  align: right;
+}
 
 .container1 {
   display: flex;

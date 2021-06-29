@@ -61,9 +61,6 @@ p {
 
 .container3 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background: #FFF;
   border: 0px #FFF;
   border-radius: 10px;
@@ -113,8 +110,6 @@ img {
 #map {
   height: 350px;
   display:;
-  background: #FFF;
-  border: 0px #FFF;
       }
 
 #True {}

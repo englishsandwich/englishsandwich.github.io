@@ -31,10 +31,10 @@ p {
 
 p.source {
   font-family: 'Rubik', sans-serif;
-  color: #fff; 
+  color: #000; 
   font-size: 8px; 
   text-align: right;
-  margin-top: -1.8em;
+  margin-top: -1.6em;
 }
 
 .container1 {
@@ -179,7 +179,12 @@ img {
 }
 
 
-.btn:active, button:active, .btn:hover, button:hover, {
+.btn:active, button:active {
+  background-color: #F9E2B3;
+}
+
+
+.btn:hover, button:hover, {
   background-color: #F9E2B3;
 }
 

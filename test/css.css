@@ -109,27 +109,7 @@ img {
 }
 
 
-//*
-.btn btn-option {
-  padding: 10px;
-  margin: 10px;
-  background: #FAE6BE;
-  border: 0px solid  #FF;
-  border-radius: 2px;
-  box-shadow: 0px 0px 0px 0px;
-}
-
-.btn btn-restart, .btn btn-back, .btn btn-next, .btn btn-submit, {
-  padding: 10px;
-  margin: 10px;
-  background: #F4C669;
-  border: 0px solid  #F4C669;
-  border-radius: 2px;
-  box-shadow: 1px 1px 0px 0px;
-}
-*//
-
-button.button, button.button:disabled, .container2 .options .button, .container2 .options .button:disabled{
+.btn{
   padding: 10px;
   margin: 10px;
   background-color: #FFFFFF;
@@ -138,15 +118,10 @@ button.button, button.button:disabled, .container2 .options .button, .container2
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 1px;
+  border-radius: 4px;
   box-shadow: 0px 0px 0px 0px;
   cursor: pointer;
   width: 100px;
-}
-
-button.button:hover, button.button:active {
-  background-color: #FAE6BE;
-  cursor: pointer;
 }
 
 

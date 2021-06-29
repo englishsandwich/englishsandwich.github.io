@@ -161,7 +161,7 @@ img {
 }
 
 
-.btn {
+.btn, button {
   padding: 10px;
   margin: 3px;
   background-color: #FFFFFF;
@@ -179,21 +179,8 @@ img {
 }
 
 
-button {
-  padding: 10px;
-  margin: 3px;
-  background-color: #FFFFFF;
-  color: #000000;
-  border: 1px solid #000000;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 4px;
-  box-shadow: 0px 0px 0px 0px;
-  cursor: pointer;
-  width: 100px;
-  font-family: 'Rubik', sans-serif;
-  font-size: 16px; 
+.btn:active, button:active, .btn:hover, button:hover, {
+  background-color: #F9E2B3;
 }
 
 A:link { 

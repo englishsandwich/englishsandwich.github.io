@@ -3,14 +3,6 @@
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Where is this dish from?</title>
   <link rel="stylesheet" href="/test/css.css">
-  <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 400px;
-      }
-
-    </style>
   </head>
 
 <body>
@@ -68,8 +60,8 @@ spice/stock<br>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
+          center: {lat: 0, lng: 0},
+          zoom: 1
         });
       }
     </script>

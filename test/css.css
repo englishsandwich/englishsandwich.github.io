@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 body
 { background: linear-gradient(#593645, #9B5E77, #9B5E77, #C7A3B2);
   background-repeat:no-repeat;
-  font-family: gill sans, arial, geneva; 
+  font-family: 'Rubik', sans-serif;
   height: 100% !important;
   color: #000; 
   font-size: 12px; 
@@ -9,19 +11,19 @@ body
 
 
 h1 {
-  font-family: gill sans, times new roman, times; 
+  font-family: 'Rubik', sans-serif;
   color: #F8F3F5; 
   font-size: 20px; 
 }
   
 h2 {
-  font-family: gill sans, times new roman, times; 
+  font-family: 'Rubik', sans-serif;
   color: #422933; 
   font-size: 14px; 
 }
 
 p {
-  font-family: gill sans, arial, geneva; 
+  font-family: 'Rubik', sans-serif;
   color: #000; 
   font-size: 12px; 
 }

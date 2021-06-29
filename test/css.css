@@ -13,19 +13,19 @@ body
 h1 {
   font-family: 'Rubik', sans-serif;
   color: #F8F3F5; 
-  font-size: 20px; 
+  font-size: 30px; 
 }
   
 h2 {
   font-family: 'Rubik', sans-serif;
   color: #422933; 
-  font-size: 14px; 
+  font-size: 20px; 
 }
 
 p {
   font-family: 'Rubik', sans-serif;
   color: #000; 
-  font-size: 12px; 
+  font-size: 16px; 
 }
 
 
@@ -138,7 +138,7 @@ img {
 
 .btn {
   padding: 10px;
-  margin: 10px;
+  margin: 3px;
   background-color: #FFFFFF;
   color: #000000;
   border: 1px solid #000000;
@@ -150,12 +150,13 @@ img {
   cursor: pointer;
   width: 100px;
   font-family: 'Rubik', sans-serif;
+  font-size: 16px; 
 }
 
 
 button {
   padding: 10px;
-  margin: 10px;
+  margin: 3px;
   background-color: #FFFFFF;
   color: #000000;
   border: 1px solid #000000;
@@ -167,6 +168,7 @@ button {
   cursor: pointer;
   width: 100px;
   font-family: 'Rubik', sans-serif;
+  font-size: 16px; 
 }
 
 A:link { 

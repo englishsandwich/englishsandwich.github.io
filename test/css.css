@@ -113,7 +113,8 @@ img {
 
 #map {
   height: 350px;
-  width:;
+  width: 100%;
+  flex: 1 1 0;
   display:;
   border-radius: 10px;
       }

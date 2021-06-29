@@ -3,6 +3,19 @@
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Where is this dish from?</title>
   <link rel="stylesheet" href="/test/css.css">
+  <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
 
 <body>
@@ -50,6 +63,25 @@ spice/stock<br>
     </div>
   </div>
 </div>
+
+
+    
+<div class="container2>
+    <div id="map"></div>    
+                 </div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY4SRCK0y0KV_DQ3fD9N8O4cY9D1UeWVE&callback=initMap"
+    async defer></script>
+                                                                                       
+
   
 <button class="btn" id="False">jfnjfhnfjhnjhig</button>
 <button>jfnjfhnfjhnjhig</button>

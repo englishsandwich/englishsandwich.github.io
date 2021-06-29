@@ -113,8 +113,9 @@ img {
 
 #map {
   height: 350px;
-  width: 300px;
+  width:;
   display:;
+  border-radius: 10px;
       }
 
 #True {}

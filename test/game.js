@@ -13,31 +13,31 @@ var score = 0;
 
 let questions = [
   {
-    question: "Where is this dish from?"
+    question: "Where is this dish from?",
     answers: [
       {option:"Senegal",answer:true},
-      {option:"Guam",answer:false},
+      {option:"Guam",answer:false}
     ]
   },
   
   {
-    question: "Where is this dish from?"
+    question: "Where is this dish from?",
     answers: [
       {option:"Senegal",answer:true},
-      {option:"Guam",answer:false},
+      {option:"Guam",answer:false}
     ]
   },
     
       {
-    question: "Where is this dish from?"
+    question: "Where is this dish from?",
     answers: [
       {option:"Senegal",answer:true},
-      {option:"Guam",answer:false},
+      {option:"Guam",answer:false}
     ]
   }
 ]
 
-//* onclick events
+// onclick events
 restartBtn.addEventListener('click',restart);
 prevBtn.addEventListener('click',prev);
 nextBtn.addEventListener('click',next);
@@ -45,11 +45,11 @@ submitBtn.addEventListener('click',submit);
 
 
 
-//* executed when the page loads
-function beginQuiz (){
+// executed when the page loads
+function beginQuiz(){
   currentQuestion = 0;
   questionText.innerHTML = questions[currentQuestion].question;
-  trueBtn.innerHTML: = questions[currentQuestion].answers[0].option;
+  trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
   trueBtn.onclick = () => {
     let ano=0;
     if(questions[currentQuestion].answers[ano].answer){
@@ -58,12 +58,11 @@ function beginQuiz (){
       }
     }
     userScore.innerHTML = score;
-    if(currentQuestion<2{
+    if(currentQuestion<2){
        next();
   }
 }
-
-  falseBtn.innerHTML: = questions[currentQuestion].answers[0].option;
+  falseBtn.innerHTML = questions[currentQuestion].answers[0].option;
   falseBtn.onclick = () => {
     let ano=1;
     if(questions[currentQuestion].answers[ano].answer){
@@ -82,8 +81,8 @@ function beginQuiz (){
 beginQuiz();
   
 
-//* reset score
-function restart (){
+// reset score
+function restart(){
   currentQuestion = 0;
   prevBtn.classList.remove('hide');
   nextBtn.classList.remove('hide');
@@ -95,15 +94,15 @@ function restart (){
   beginQuiz();
 }
 
-//* next fxn
+// next fxn
 function next(){
   currentQuestion++;
-  if(currentQuestion>=2)[
+  if(currentQuestion>=2){
     nextBtn.classList.add('hide');
     prevBtn.classList.remove('hide');
 }
-quesionText.innerHTML = questions[currentQuestion].question;
-trueBtn.innerHTML = questions[currentQuestion]answer[0].option;
+questionText.innerHTML = questions[currentQuestion].question;
+trueBtn.innerHTML = questions[currentQuestion]answers[0].option;
 trueBtn.onclick = () => {
   let ano=0;
   if(questions[currentQuestion].answers[ano].answer){
@@ -116,18 +115,34 @@ trueBtn.onclick = () => {
       next();
     }
 }
+falseBtn.innerHTML = questions[currentQuestion].answers[1].option;
+falseBtn.onclick = () => {
+  let ano=1;
+  if(questions[currentQuestion].answers[ano].answer){
+    if(score<3){
+      score++;
+    }
+  }
+  userScore.innerHTML = score;
+  if(currentQuestion<2){
+    next();
+  }
+}
 prevBtn.classList.remove('hide');
 }
 
-//* prev fxn
+
+
+
+// prev fxn
 function prev(){
   currentQuestion--;
   if(currentQuestion<=0){
     prevBtn.classList.add('hide');
     nextBtn.classList.remove('hide');
   }
-quesionText.innerHTML = questions[currentQuestion].question;
-trueBtn.innerHTML = questions[currentQuestion]answer[0].option;
+questionText.innerHTML = questions[currentQuestion].question;
+trueBtn.innerHTML = questions[currentQuestion]answers[0].option;
 trueBtn.onclick = () => {
   let ano=0;
   if(questions[currentQuestion].answers[ano].answer){
@@ -158,7 +173,7 @@ nextBtn.classList.remove('hide');
 }
 
 
-//* submit button
+//
 function submit(){
   prevBtn.classList.add('hide');
   nextBtn.classList.add('hide');

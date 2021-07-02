@@ -1,186 +1,131 @@
+const country = document.getElementById("country");
+const imgsrc = document.getElementById("imgsrc");
+const source = document.getElementById("source");
 const restartBtn = document.getElementById('restart');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const submitBtn = document.getElementById('submit');
-const trueBtn = document.getElementById('True');
-const falseBtn = document.getElementById('False');
+const optA = document.getElementById('A');
+const optB = document.getElementById('B');
+const optC = document.getElementById('C');
+const optD = document.getElementById('D');
+const optE = document.getElementById('E');
+const optF = document.getElementById('F');
+const optG = document.getElementById('G');
+const optH = document.getElementById('H');
 const userScore = document.getElementById('user-score');
 const questionText = document.getElementById('question-text');
+const explanation = document.getElementById('explanation');
 
 
 let currentQuestion = 0;
 var score = 0;
 
 let questions = [
-  {
-    question: "Where is this dish from?",
-    answers: [
-      {option:"Senegal",answer:true},
-      {option:"Guam",answer:false}
-    ]
-  },
-  
-  {
-    question: "Where is this dish from?",
-    answers: [
-      {option:"Senegal",answer:true},
-      {option:"Guam",answer:false}
-    ]
-  },
-    
+    {
+        question : "Where is this dish from?",
+        imgsrc : "https://i.pinimg.com/originals/6f/0f/eb/6f0feb3e61e16e2025877f8d1a879505.jpg",
+        source : "photo source here",
+        optA : "Nope",
+        optB : "Yep",
+        optC : "Nope",
+        optD : "Nope",
+        optE : "Nope",
+        optF : "Nope",
+        optG : "Nope",
+        optH : "Nope",
+        correct : "B",
+        explanantion: "This is the national dish of <b>Senengal</b>, <i>ceebu jen</i>! This means <i>rice and fish</i> in Wolof.",
+    },
       {
-    question: "Where is this dish from?",
-    answers: [
-      {option:"Senegal",answer:true},
-      {option:"Guam",answer:false}
-    ]
-  }
-]
+        question : "Where is this dish from?",
+        imgsrc : "imgsrc.jpg",
+        source : "photo source here",
+        optA : "Nope",
+        optB : "Nope",
+        optC : "Nope",
+        optD : "Yep",
+        optE : "Nope",
+        optF : "Nope",
+        optG : "Nope",
+        optH : "Nope",
+        correct : "D",
+        explanantion: "This is <i>blah blah</i> from <b>Country</b>!",
+    },
+        {
+        question : "Where is this dish from?",
+        imgsrc : "imgsrc.jpg",
+        source : "photo source here",
+        optA : "Nope",
+        optB : "Nope",
+        optC : "Nope",
+        optD : "Nope",
+        optE : "Nope",
+        optF : "Nope",
+        optG : "Nope",
+        optH : "Yep",
+        correct : "H",
+        explanantion: "This is <i>blah blah</i> from <b>Country</b>!",
+    }
+  ]
 
-// onclick events
-restartBtn.addEventListener('click',restart);
-prevBtn.addEventListener('click',prev);
-nextBtn.addEventListener('click',next);
-submitBtn.addEventListener('click',submit);
+
+const lastQuestion = questions.length - 1;
+let runningQuestion = 0;
+let count = 0;
+let score = 0;
+
+// render a question
+function renderQuestion(){
+    let q = questions[runningQuestion];
+    
+    question.innerHTML = "<p>"+ q.question +"</p>";
+    imgsrc.innerHTML = "<img src="+ q.imgsrc +">";
+    optA.innerHTML = q.optA;
+    optB.innerHTML = q.optB;
+    optC.innerHTML = q.optC;
+    optD.innerHTML = q.optD;
+    optE.innerHTML = q.optE;
+    optF.innerHTML = q.optF;
+    optG.innerHTML = q.optG;
+    optH.innerHTML = q.optH;
+}
+
+// start quiz
+start.addEventListener("click",startQuiz);
+
+function startQuiz(){
+    start.style.display = "none";
+    renderQuestion();
+    quiz.style.display = "block";
+}
 
 
-
-// executed when the page loads
-function beginQuiz(){
-  currentQuestion = 0;
-  questionText.innerHTML = questions[currentQuestion].question;
-  trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
-  trueBtn.onclick = () => {
-    let ano=0;
-    if(questions[currentQuestion].answers[ano].answer){
-      if(score<3){
+// checkAnswer
+function checkAnswer(answer){
+    if( answer == questions[runningQuestion].correct){
         score++;
-      }
+        // give explanations
+        answerIsCorrect();
+    }else{
+        // answer is wrong
+        answerIsWrong();
     }
-    userScore.innerHTML = score;
-    if(currentQuestion<2){
-       next();
-  }
-}
-  falseBtn.innerHTML = questions[currentQuestion].answers[0].option;
-  falseBtn.onclick = () => {
-    let ano=1;
-    if(questions[currentQuestion].answers[ano].answer){
-      if(score<3){
-        score++;
-      }
-    }
-    userScore.innerHTML = score;
-    if(currentQuestion<2){
-      next();
-    }
-  }
-  prevBtn.classList.add('hide');
-}
-
-beginQuiz();
-  
-
-// reset score
-function restart(){
-  currentQuestion = 0;
-  prevBtn.classList.remove('hide');
-  nextBtn.classList.remove('hide');
-  submitBtn.classList.remove('hide');
-  trueBtn.classList.remove('hide');
-  falseBtn.classList.remove('hide');
-  score = 0;
-  userScore.innerHTML = score;
-  beginQuiz();
-}
-
-// next fxn
-function next(){
-  currentQuestion++;
-  if(currentQuestion>=2){
-    nextBtn.classList.add('hide');
-    prevBtn.classList.remove('hide');
-}
-questionText.innerHTML = questions[currentQuestion].question;
-trueBtn.innerHTML = questions[currentQuestion]answers[0].option;
-trueBtn.onclick = () => {
-  let ano=0;
-  if(questions[currentQuestion].answers[ano].answer){
-      if(score<3){
-        score++;
-      }
-    }
-    userScore.innerHTML = score;
-    if(currentQuestion<2){
-      next();
+    count = 0;
+    if(runningQuestion < lastQuestion){
+        runningQuestion++;
+        renderQuestion();
     }
 }
-falseBtn.innerHTML = questions[currentQuestion].answers[1].option;
-falseBtn.onclick = () => {
-  let ano=1;
-  if(questions[currentQuestion].answers[ano].answer){
-    if(score<3){
-      score++;
-    }
-  }
-  userScore.innerHTML = score;
-  if(currentQuestion<2){
-    next();
-  }
-}
-prevBtn.classList.remove('hide');
+
+// answer is correct TEST
+function answerIsCorrect(){
+    document.getElementById(explanation).style.backgroundColor = "#0f0";
 }
 
-
-
-
-// prev fxn
-function prev(){
-  currentQuestion--;
-  if(currentQuestion<=0){
-    prevBtn.classList.add('hide');
-    nextBtn.classList.remove('hide');
-  }
-questionText.innerHTML = questions[currentQuestion].question;
-trueBtn.innerHTML = questions[currentQuestion]answers[0].option;
-trueBtn.onclick = () => {
-  let ano=0;
-  if(questions[currentQuestion].answers[ano].answer){
-      if(score<3){
-        score++;
-      }
-    }
-    userScore.innerHTML = score;
-    if(currentQuestion<2){
-      next();
-    }
-}
-falseBtn.innerHTML = questions[currentQuestion].answers[1].option;
-falseBtn.onclick = () => {
-  let ano=1;
-  if(questions[currentQuestion].answers[ano].answer){
-    if(score<3){
-      score++;
-    }
-  }
-  userScore.innerHTML = score;
-  if(currentQuestion<2){
-    next ();
-  }
-}
-
-nextBtn.classList.remove('hide');
-}
-
-
-//
-function submit(){
-  prevBtn.classList.add('hide');
-  nextBtn.classList.add('hide');
-  submitBtn.classList.add('hide');
-  trueBtn.classList.add('hide');
-  falseBtn.classList.add('hide');
-  questionText.innerHTML = "Nice job!";
+// answer is WRONG TEST
+function answerIsWrong(){
+    document.getElementById(explanation).style.backgroundColor = "#0f0";
 }
 
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css.css" rel="stylesheet">
+  <script defer src="game.js"></script>
+  <title>Where is this dish from?</title>
+</head>
+<body>
+    <center>
+        <h1>Where is this dish from?</h1><p>
+      <div class="container1">
+          <div id="splash"><h2>Welcome to the game! Can you guess where each food dish is from? Click below to start.</h2></div>
+        <div id="country"><h2></h2></div>
+          <div id="ingredients"></div>
+      </div>
+      
+      <div class="container2">
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="explanation-container" class="hide">Explanation</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start!</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+  </div>
+
+      
+<div class="container3">
+    <div id="map"></div>    
+</div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 0, lng: 0},
+          zoom: 1,
+          disableDefaultUI: true,
+          zoomControl: false,
+          scaleControl: true,
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY4SRCK0y0KV_DQ3fD9N8O4cY9D1UeWVE&callback=initMap"
+    async defer></script>
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+&#8226;&nbsp;<a href="/index.html" target="" class="footer">back to game!</a>&nbsp;&#8226;&nbsp;
+<a href="/about.html" target="1about" class="footer">about</a>&nbsp;&#8226;&nbsp;
+<a href="https://streamelements.com/english_sandwich/tip" target="2donate" class="footer">support us</a>&nbsp;&#x2764;&nbsp;&#8226;&nbsp;
+<br><p></p><br>
+&copy; <a href="http://twitch.tv/english_sandwich" target="4newtwitch" class="footer">English Sandwich</a> 2021
+</body>
+</html>

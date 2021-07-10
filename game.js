@@ -124,7 +124,7 @@ function clearStatusClass(element) {
 const questions = [
   {
     question: "Where is this dish from?",
-    imgSrc: "/img/153.jpeg",
+    imgSrc: "file:///Users/Hannah/Documents/quiz/img/153.jpeg",
     explanation: "This is the national dish of <b>Senegal</b>, called <i>ceebu jen</i> (sometimes spelled <i>thiebou dienne</i>), which means <i>rice and fish</i> in Wolof. It's also popular in neighboring countries such as Mauritania and the Gambia.",
     ingredList: "rice<br>fish<br>carrots<br>cabbage<br>cassava<br>eggplant<br>tomatoes<br>garlic<br>parsley<br>stock<br>",
     answers: [
@@ -140,9 +140,9 @@ const questions = [
   },
   {
     question: "Where is this dish from?",
-    imgSrc: "/img/139.jpeg",
+    imgSrc: "file:///Users/Hannah/Documents/quiz/img/139.jpeg",
     explanation: "This dessert, <i>halo halo</i>, is often served as street food in the <b>Philippines</b>!",
-    ingredList: "shaved ice<br>ice cream<br>evaporated milk<br>jackfruit<br>coconut<br>sweetened beans<br>plantains<br>yam jelly<br>leche flan",
+    ingredList: "shaved ice<br>taro ice cream<br>evaporated milk<br>jackfruit<br>coconut<br>sweetened beans<br>plantains<br>yam jelly<br>leche flan",
     answers: [
       { text: 'Israel', correct: false },
       { text: 'Sri Lanka', correct: false },
@@ -156,7 +156,7 @@ const questions = [
   },
   {
     question: "Where is this dish from?",
-    imgSrc: "/img/130.jpeg",
+    imgSrc: "file:///Users/Hannah/Documents/quiz/img/130.jpeg",
     explanation: "This is <i>fufu and egusi soup</i>, popular in West Africa and often eaten in <b>Nigeria.</b> Cassava or beans are mashed into a paste and cooked to make <i>fufu</i>. The <i>fufu</i> is used like bread to eat soup or stew. <i>Egusi</i> is a type of melon grown in Nigeria and neighboring countries. The seeds are dried and ground to make this meal.",
     ingredList: "cassava or beans<br>tomatoes<br>peppers<br>onion<br>garlic<br>palm oil<br>choice of meat<br>dried/smoked fish<br>bouillon<br>melon seeds<br>green leafy vegetable",
     answers: [
@@ -172,7 +172,7 @@ const questions = [
   },
   {
     question: "Where is this dish from?",
-    imgSrc: "/img/91.jpeg",
+    imgSrc: "file:///Users/Hannah/Documents/quiz/img/91.jpeg",
     explanation: "This is <i>tteokbokki</i> (떡볶이), a popular street food in <b>South Korea</b>!",
     ingredList: "rice cakes<br>fish cakes<br>green onion<br>eggs<br>chili paste<br>sugar<br>",
     answers: [
@@ -237,7 +237,7 @@ const questions = [
   {
     question: "Where is this dish from?",
     imgSrc: "/img/12.jpeg",
-    explanation: "This dish is <i>conch salad</i> from the Bahamas. Also popular is <i>cracked conch</i> or dee-fried conch meat. If you don't know, a conch is that big shell that you put next to your ear to hear the ocean.",
+    explanation: "This dish is <i>conch salad</i> from the Bahamas. Also popular is <i>cracked conch</i> or deep-fried conch meat. If you don't know, a conch is that big shell that you put next to your ear to hear the ocean.",
     ingredList: "conch<br>tomatoes<br>peppers<br>onions",
     answers: [
       { text: 'Japan', correct: false },
@@ -276,7 +276,7 @@ const questions = [
       { text: 'Libya', correct: false },
       { text: 'France', correct: false },
       { text: 'Argentina', correct: false },
-      { text: 'New Zealand', correct: true },
+      { text: 'New Zealand', correct: false },
       { text: 'India', correct: false },
       { text: 'Iceland', correct: false },
       { text: 'Saudi Arabia', correct: false }
@@ -634,7 +634,7 @@ const questions = [
   {
     question: "Where is this dish from?",
     imgSrc: "/img/3.jpeg",
-    explanation: "<i>Zviti</i> is a tomato and pepper sauce from <b>Algeria</b>, which is grilled, mashed with a mortal and pestle, and served with a semolina flatbread.",
+    explanation: "<i>Zviti</i> is a tomato and pepper sauce from <b>Algeria</b>, which is grilled, mashed with a mortar and pestle, and served with a semolina flatbread.",
     ingredList: "semolina flour<br>salt<br>tomatoes<br>sweet pepper<br>hot peppers<br>tomato<br>garlic<br>coriander seeds<br>fennel seeds<br> butter",
     answers: [
       { text: 'Mexico', correct: false },
@@ -667,7 +667,7 @@ const questions = [
     question: "Where is this dish from?",
     imgSrc: "/img/6.jpeg",
     explanation: "<i>Ducana</i> is a sweet potato dumpling made in <b>Antigua and Barbuda</b>, often served with <i>saltfish</i>, which is salted and dried fish, soaked in water and cooked with vegetables.",
-    ingredList: "coconut<br>sweet potatoes<br>sugar<br>cinnamon<br>nutmeg<br>flour<br>dried fish<br>salt<br>onions<br>garlic<br>peppers<br>tomato sauce<br>butter",
+    ingredList: "coconut<br>sweet potatoes<br>sugar<br>cinnamon<br>nutmeg<br>flour<br>dried fish<br>salt<br>onions<br>garlic<br>peppers<br>tomato sauce<br>butter<br>green leaves",
     answers: [
       { text: 'Georgia', correct: false },
       { text: 'UAE', correct: false },
@@ -729,7 +729,7 @@ const questions = [
   },
   {
     question: "Where is this dish from?",
-    imgSrc: "/img/.jpeg",
+    imgSrc: "/img/11.jpeg",
     explanation: "<i>Bughlama</i> is stew from <b>Azerbaijan</b>. It's made with lamb or other meat, with tomatoes and onions. Wouldn't Bill and Mary Sue be proud?",
     ingredList: "lamb<br>onions<br>tomatoes<br>peppers<br>tumeric<br>parsley<br>garlic<br>plums<br>lemon",
     answers: [
@@ -746,7 +746,7 @@ const questions = [
   {
     question: "Where is this dish from?",
     imgSrc: "/img/13.jpeg",
-    explanation: "<i>Muhammar</i> (محمر‎) is a sweet rice fish from <b>Bahrain</b> that is said to have been made by pearl divers, who used the dates as energy to better their dives.",
+    explanation: "<i>Muhammar</i> (محمر‎) is a sweet rice dish from <b>Bahrain</b> that is said to have been made by pearl divers, who used the dates as energy to better their dives.",
     ingredList: "basmati rice<br>dates<br>brown sugar<br>ghee<br>cardamom<br>saffron<br>rose water<br>salt",
     answers: [
       { text: 'Bahrain', correct: true },
@@ -778,7 +778,7 @@ const questions = [
   {
     question: "Where is this dish from?",
     imgSrc: "/img/16.jpeg",
-    explanation: "<i>Sashni</i> is just one of many potato dishes enjoyed in <b>Belarus</b>. This one is a simple recipe of mashes potatoes and eggs, with a cottage cheese and egg mixture inside.",
+    explanation: "<i>Sashni</i> is just one of many potato dishes enjoyed in <b>Belarus</b>. This one is a simple recipe of mashed potatoes and eggs, with a cottage cheese and egg mixture inside.",
     ingredList: "potatoes<br>eggs<br>flour<br>cottage cheese",
     answers: [
       { text: 'Ireland', correct: false },
@@ -795,7 +795,7 @@ const questions = [
     question: "Where is this dish from?",
     imgSrc: "/img/17.jpeg",
     explanation: "A cream sauce with poached chicken is popular in <b>Belgium</b>, and it's called <i>waterzooï de poulet</i>.",
-    ingredList: "chicken<br>onion<br>carrot<br>celery<br>butter<br>bay leaf<br>fresh parsley<br> fresh thyme<br>chicken broth<br>potatoes>br>egg yolk<br>cream",
+    ingredList: "chicken<br>onion<br>carrot<br>celery<br>butter<br>bay leaf<br>fresh parsley<br>fresh thyme<br>chicken broth<br>potatoes<br>egg yolk<br>cream",
     answers: [
       { text: 'Serbia', correct: false },
       { text: 'Algeria', correct: false },
@@ -810,12 +810,12 @@ const questions = [
   {
     question: "Where is this dish from?",
     imgSrc: "/img/25.jpeg",
-    explanation: "<i>Ambuyat</i> is a staple food and national dish of <b>Brunei</b>. It's a sticky mixture of sago palm and water, and it's often eaten with a spicy sauce called <i>cacah</i> and served with fish or other vegetables dishes. ambuyat is wrapped around chopsticks and swallowed whole!",
+    explanation: "<i>Ambuyat</i> is a staple food and national dish of <b>Brunei</b>. It's a sticky mixture of sago palm and water, and it's often eaten with a spicy sauce called <i>cacah</i> and served with fish or other vegetable dishes. Ambuyat is wrapped around chopsticks and swallowed whole!",
     ingredList: "sago palm<br>water<br>fish<br>chili<br>lime<br>shrimp paste<br>sugar<br>salt",
     answers: [
       { text: 'Trinidad & Tobago', correct: false },
       { text: 'Nigeria', correct: false },
-      { text: 'Burundi', correct: false },
+      { text: 'Thailand', correct: false },
       { text: 'Sri Lanka', correct: false },
       { text: 'Brunei', correct: true },
       { text: 'Albania', correct: false },
@@ -858,7 +858,7 @@ const questions = [
   {
     question: "Where is this dish from?",
     imgSrc: "/img/77.jpeg",
-    explanation: "These are <i>bakso</i>, meatballs from <b>Indonesia</b>. They are often served with soup broth, noodles, and vegetables.",
+    explanation: "These are <i>bakso</i>, meatballs from <b>Indonesia</b>. They are often served with soup broth, noodles, and vegetables. The dish in the photo is served with fried dumplings.",
     ingredList: "beef<br>cornflour<br>garlic<br>coriander<br>baking powder<br>soup broth<br>",
     answers: [
       { text: 'Russia', correct: false },
@@ -875,7 +875,7 @@ const questions = [
     question: "Where is this dish from?",
     imgSrc: "/img/140.jpeg",
     explanation: "This dish from <b>Poland</b> is called <i>kołduny</i>. It's the name of a dumpling made with ham and spices, and often served in a soup.",
-    ingredList: "ham<br>flour<br>egg<br>salt<br>pepper<br>marjoram<br>garlic<br>paprika",
+    ingredList: "ham<br>flour<br>egg<br>salt<br>pepper<br>marjoram<br>garlic<br>paprika<br>yogurt",
     answers: [
       { text: 'Poland', correct: true },
       { text: 'Great Britain', correct: false },
@@ -891,7 +891,7 @@ const questions = [
     question: "Where is this dish from?",
     imgSrc: "/img/151.jpeg",
     explanation: "A traditional dish of <b>São Tomé and Príncipe</b> and also enjoyed in Angola, <i>calulu de peixe</i> is a fish stew made with palm oil and okra, and often served with <i>funge</i> (cassava porridge).",
-    ingredList: "fish<br>dried fish<br>onion<br>tomatoes<br>chili peppers<br>okra<br>sweet potato leaves<br>eggplant<br>okra<br>garlic<br>palm oil<br>lemon",
+    ingredList: "fish<br>dried fish<br>onion<br>tomatoes<br>chili peppers<br>okra<br>sweet potato leaves<br>eggplant<br>garlic<br>palm oil<br>lemon",
     answers: [
       { text: 'Spain', correct: false },
       { text: 'São Tomé & Príncipe', correct: true },
@@ -907,15 +907,15 @@ const questions = [
     question: "Where is this dish from?",
     imgSrc: "/img/184.jpeg",
     explanation: "This bread loaf made in <b>Ukraine</b> and its neighboring countries, called <i>korovai</i> (коровай), is decorated with delicate flowers and leaves, and it's traditionally the first food eaten at a wedding, to bring the newlyweds good fortune.",
-    ingredList: "yeast<br>milk<br>sugar<br>eggs<br>butter<br>wheat flour<br>salt",
+    ingredList: "wheat flour<br>yeast<br>milk<br>sugar<br>eggs<br>butter<br>salt",
     answers: [
       { text: 'New Zealand', correct: false },
       { text: 'Great Britain', correct: false },
       { text: 'Ukraine', correct: true },
       { text: 'Canada', correct: false },
-      { text: 'Iceland', correct: true },
+      { text: 'Iceland', correct: false },
       { text: 'Mexico', correct: false },
-      { text: 'Labanon', correct: false },
+      { text: 'Lebanon', correct: false },
       { text: 'Brazil', correct: false }
     ]
   },
@@ -923,13 +923,13 @@ const questions = [
     question: "Where is this dish from?",
     imgSrc: "/img/197.jpeg",
     explanation: "<i>Goat water</i> is a spicy stew from the island of <b>Montserrat</b> and also made on some nearby islands. It's thought to be a Carribbean take on an old Irish stew, and can be made with breadfruit as a substitute or addition to goat meat.",
-    ingredList: "goat meat<br>molasses<br>cloves<br>pimento<br>garlic<br>onion<br>scotch bonnet chilis<br>pepper<br>flour<br>rum<br>",
+    ingredList: "goat meat<br>molasses<br>cloves<br>pimento<br>garlic<br>onion<br>scotch bonnet peppers<br>pepper<br>flour<br>rum<br>",
     answers: [
       { text: 'New Zealand', correct: false },
       { text: 'Greece', correct: false },
       { text: 'Vatican', correct: false },
       { text: 'Montserrat', correct: true },
-      { text: 'Peru', correct: true },
+      { text: 'Peru', correct: false },
       { text: 'Panama', correct: false },
       { text: 'Azerbaijan', correct: false },
       { text: 'Japan', correct: false }

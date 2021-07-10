@@ -205,7 +205,7 @@ const questions = [
   {
     question: "Where is this dish from?",
     imgSrc: "/img/4.jpeg",
-    explanation: "<i>Cargols a la lluna</i> — land snails — are a popular dish in <b>Andorra</b> and the neighboring Catalonia region of Spain. They are often served with aioli or vinaigrette.",
+    explanation: "<i>Cargols a la llauna</i> — land snails — are a popular dish in <b>Andorra</b> and the neighboring Catalonia region of Spain. They are often served with aioli or vinaigrette.",
     ingredList: "snails<br>oil<br>aioli",
     answers: [
       { text: 'Cuba', correct: false },

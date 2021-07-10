@@ -897,7 +897,7 @@ const questions = [
       { text: 'São Tomé & Príncipe', correct: true },
       { text: 'Cambodia', correct: false },
       { text: 'Cape Verde', correct: false },
-      { text: 'Eritrea', correct: true },
+      { text: 'Eritrea', correct: false },
       { text: 'Senegal', correct: false },
       { text: 'Malaysia', correct: false },
       { text: 'Guinea', correct: false } 

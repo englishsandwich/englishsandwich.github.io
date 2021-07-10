@@ -666,7 +666,7 @@ const questions = [
   {
     question: "Where is this dish from?",
     imgSrc: "/img/6.jpeg",
-    explanation: "<i>Duncana</i> is a sweet potato dumpling made in <b>Antigua and Barbuda</b>, often served with <i>saltfish</i>, which is salted and dried fish, soaked in water and cooked with vegetables.",
+    explanation: "<i>Ducana</i> is a sweet potato dumpling made in <b>Antigua and Barbuda</b>, often served with <i>saltfish</i>, which is salted and dried fish, soaked in water and cooked with vegetables.",
     ingredList: "coconut<br>sweet potatoes<br>sugar<br>cinnamon<br>nutmeg<br>flour<br>dried fish<br>salt<br>onions<br>garlic<br>peppers<br>tomato sauce<br>butter",
     answers: [
       { text: 'Georgia', correct: false },

@@ -124,7 +124,7 @@ function clearStatusClass(element) {
 const questions = [
   {
     question: "Where is this dish from?",
-    imgSrc: "file:///Users/Hannah/Documents/quiz/img/153.jpeg",
+    imgSrc: "/img/153.jpeg",
     explanation: "This is the national dish of <b>Senegal</b>, called <i>ceebu jen</i> (sometimes spelled <i>thiebou dienne</i>), which means <i>rice and fish</i> in Wolof. It's also popular in neighboring countries such as Mauritania and the Gambia.",
     ingredList: "rice<br>fish<br>carrots<br>cabbage<br>cassava<br>eggplant<br>tomatoes<br>garlic<br>parsley<br>stock<br>",
     answers: [
@@ -140,7 +140,7 @@ const questions = [
   },
   {
     question: "Where is this dish from?",
-    imgSrc: "file:///Users/Hannah/Documents/quiz/img/139.jpeg",
+    imgSrc: "/img/139.jpeg",
     explanation: "This dessert, <i>halo halo</i>, is often served as street food in the <b>Philippines</b>!",
     ingredList: "shaved ice<br>ice cream<br>evaporated milk<br>jackfruit<br>coconut<br>sweetened beans<br>plantains<br>yam jelly<br>leche flan",
     answers: [
@@ -156,7 +156,7 @@ const questions = [
   },
   {
     question: "Where is this dish from?",
-    imgSrc: "file:///Users/Hannah/Documents/quiz/img/130.jpeg",
+    imgSrc: "/img/130.jpeg",
     explanation: "This is <i>fufu and egusi soup</i>, popular in West Africa and often eaten in <b>Nigeria.</b> Cassava or beans are mashed into a paste and cooked to make <i>fufu</i>. The <i>fufu</i> is used like bread to eat soup or stew. <i>Egusi</i> is a type of melon grown in Nigeria and neighboring countries. The seeds are dried and ground to make this meal.",
     ingredList: "cassava or beans<br>tomatoes<br>peppers<br>onion<br>garlic<br>palm oil<br>choice of meat<br>dried/smoked fish<br>bouillon<br>melon seeds<br>green leafy vegetable",
     answers: [
@@ -172,7 +172,7 @@ const questions = [
   },
   {
     question: "Where is this dish from?",
-    imgSrc: "file:///Users/Hannah/Documents/quiz/img/91.jpeg",
+    imgSrc: "/img/91.jpeg",
     explanation: "This is <i>tteokbokki</i> (떡볶이), a popular street food in <b>South Korea</b>!",
     ingredList: "rice cakes<br>fish cakes<br>green onion<br>eggs<br>chili paste<br>sugar<br>",
     answers: [

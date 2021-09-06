@@ -300,7 +300,7 @@ const questions = [
   },  
   {
     question: "Where is this dish from?",
-    imgSrc: "/img/24.jpeg",
+    imgSrc: "/img/24-2.jpeg",
     explanation: "This is <i>pão de queijo</i>, cheese bread from <b>Brazil</b>!",
     ingredList: "tapioca flour<br>milk<br>parmesan cheese<br>mozzarella cheese<br>eggs<br>salt<br>water<br>oil",
     answers: [
@@ -316,7 +316,7 @@ const questions = [
   },  
   {
     question: "Where is this dish from?",
-    imgSrc: "/img/24-2.jpeg",
+    imgSrc: "/img/24.jpeg",
     explanation: "Yum! These are <i>brigadeiros</i> from <b>Brazil</b>!",
     ingredList: "chocolate<br>butter<br>sweetened condensed milk<br>sprinkles or nuts",
     answers: [

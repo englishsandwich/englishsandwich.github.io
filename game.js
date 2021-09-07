@@ -554,7 +554,7 @@ const questions = [
   {
     question: "Where is this dish from?",
     imgSrc: "/img/169.jpeg",
-    explanation: "<i>Surströmmingsklämma</i> is fermented herring (called <i>surströmming</i>) on hard or soft flatbread, eaten in <b>Switzerland</b> (outdoors, because it smells so bad).",
+    explanation: "<i>Surströmmingsklämma</i> is fermented herring (called <i>surströmming</i>) on hard or soft flatbread, eaten in <b>Sweden</b> (outdoors, because it smells so bad).",
     ingredList: "fish<br>potatoes<br>tomatoes<br>red onion<br>sour cream<br>flatbread",
     answers: [
       { text: 'Netherlands', correct: false },
